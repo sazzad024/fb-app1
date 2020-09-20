@@ -1,0 +1,77 @@
+@font-face{
+    font-family: roboto-regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: roboto-bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: roboto-mid;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+*{
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFFFFF;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.container-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-box{
+    width: 360px;
+    height: 430px;
+    padding: 0px 38px 0px 38px;
+    background: url(../images/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+.top-header,
+.result,
+.comment{
+    font-family: roboto-regular;
+    color: #ee433a;
+    flex: 0 0 100%;
+    text-align: center;
+}
+.emoji img{
+    width: 153px;
+    height: auto;
+    flex: 0 0 100%;
+    margin-right: 9px;
+}
+.top-header p{
+    font-family: roboto-bold;
+    font-size: 19px;
+    line-height: 22px;
+    margin-top: 7px;
+}
+.result p{
+    font-family: roboto-bold;
+    font-size: 80px;
+}
+.comment p{
+    font-family: roboto-bold;
+    font-size: 19px;
+    margin-bottom: 7px;
+}
+@media all and (max-width: 360px){
+    .main-box{
+        width: 100%;
+        padding: 0% 5% 0% 5%;
+    }
+}
