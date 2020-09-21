@@ -16,7 +16,9 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #FFFFFF;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
 }
 p{
     margin: 0;
@@ -27,6 +29,9 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.basic-width{
+    width: 360px;
 }
 .main-box{
     width: 360px;
@@ -48,11 +53,15 @@ p{
     flex: 0 0 100%;
     text-align: center;
 }
+.emoji{
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+}
 .emoji img{
     width: 153px;
     height: auto;
-    flex: 0 0 100%;
-    margin-right: 9px;
+    padding-right: 5px;
 }
 .top-header p{
     font-family: roboto-bold;
@@ -69,7 +78,82 @@ p{
     font-size: 19px;
     margin-bottom: 7px;
 }
+
+.logo-section{
+    width: 100%;
+    height: 41px;
+    border-bottom: 1px solid #ffff6a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 4px;
+}
+.logo{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+.logo img,
+.logo p{
+    display: inline-block;
+}
+.logo P{
+    color: #fb4c4c;
+    font-family: roboto-bold;
+    font-size: 19px;
+}
+.public-icon{
+    position: absolute;
+    left: 12px;
+    color: #FFFFFF;
+    font-size: 27px;
+}
+.app-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.app-box{
+    width: 93.6111%;
+    height: 241px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.app-cover{
+    height: 177px;
+    width: 100%;
+}
+.app-cover img{
+    width: 100%;
+    height: 100%;
+}
+.app-name{
+    width: 100%;
+    height: 64px;
+    background-color: #FFFFFF;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-name p{
+    color: #3e3e3e;
+    display: inline-block;
+    font-family: roboto-bold;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+
+
 @media all and (max-width: 360px){
+    .basic-width{
+        width: 100%;
+    }
     .main-box{
         width: 100%;
         padding: 0% 5% 0% 5%;
