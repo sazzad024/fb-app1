@@ -13,6 +13,7 @@
 <body>
     <div class="container-box">
         <div class="basic-width">
+            
             <!--logo-bar section-->
             <div class="logo-section">
                 <div class="logo">
@@ -21,54 +22,15 @@
                 </div>
                 <span class="public-icon material-icons">public</span>
             </div>
-            <!--app item section-->
-            <div class="app-item">
-                <div class="app-box">
-                    <div class="app-cover">
-                        <img src="images/photo-1.jpg" alt="">
-                    </div>
-                    <div class="app-name">
-                        <p>This Symbol Reveals Your True Personality</p>
-                    </div>
+            <!--share button-->
+            <div id="share-btn1" class="fb-share-box">
+                <div class="share-btn">
+                    <img src="images/fb-logo.png" alt="">
+                    <p>Share</p>
                 </div>
             </div>
-            <!--app item section-->
-            <div class="app-item">
-                <div class="app-box">
-                    <div class="app-cover">
-                        <img src="images/photo-2.jpg" alt="">
-                    </div>
-                    <div class="app-name">
-                        <p>This Symbol Reveals Your True Personality</p>
-                    </div>
-                </div>
-            </div>
-            <!--app item section-->
-            <div class="app-item">
-                <div class="app-box">
-                    <div class="app-cover">
-                        <img src="images/photo-1.jpg" alt="">
-                    </div>
-                    <div class="app-name">
-                        <p>This Symbol Reveals Your True Personality</p>
-                    </div>
-                </div>
-            </div>
-            <!--app item section-->
-            <div class="app-item">
-                <div class="app-box">
-                    <div class="app-cover">
-                        <img src="images/photo-2.jpg" alt="">
-                    </div>
-                    <div class="app-name">
-                        <p>This Symbol Reveals Your True Personality</p>
-                    </div>
-                </div>
-            </div>
-            
-
-            <!--result section
-            <div class="main-box">
+            <!--result section-->
+            <div id="result-box" class="main-box">
                 <div class="top-header">
                     <p>WHAT IS YOUR<br>LOVE SCORE?</p>
                 </div>
@@ -81,9 +43,97 @@
                 <div class="comment">
                     <p>Congrats <span>Akib Hasan</span> ! You are a romantic person</p>
                 </div>
-            </div>-->
-
+            </div>
+            <!--share button-->
+            <div id="share-btn2" class="fb-share-box">
+                <div class="share-btn">
+                    <img src="images/fb-logo.png" alt="">
+                    <p>Share</p>
+                </div>
+            </div>
+            <!--play button-->
+            <div id="play-btn1" class="play-box">
+                <div class="play-btn">
+                    <img src="images/undo-button.png" alt="">
+                    <p>Play Again</p>
+                </div>
+            </div>
+            <!--check more section-->
+            <div id="check-more" class="check-more-box">
+                <div class="check-more">
+                    <p>Check More Apps</p>
+                </div>
+            </div>
+                
+            <!--app item section-->
+            <div id="love-score" class="app-item">
+                <div class="app-box">
+                    <div class="app-cover">
+                        <img src="images/photo-3.jpg" alt="">
+                    </div>
+                    <div class="app-name">
+                        <p onclick="result(); return false;">Test Your Love Score!</p>
+                    </div>
+                </div>
+            </div>
+            <!--app item section-->
+            <div class="app-item">
+                <div class="app-box">
+                    <div class="app-cover">
+                        <img src="images/photo-4.jpg" alt="">
+                    </div>
+                    <div class="app-name">
+                        <p>This Symbol Reveals Your True Personality</p>
+                    </div>
+                </div>
+            </div>
+            <!--app item section-->
+            <div class="app-item">
+                <div class="app-box">
+                    <div class="app-cover">
+                        <img src="images/photo-1.jpg" alt="">
+                    </div>
+                    <div class="app-name">
+                        <p>This Symbol Reveals Your True Personality</p>
+                    </div>
+                </div>
+            </div>
+            <!--app item section-->
+            <div class="app-item">
+                <div class="app-box">
+                    <div class="app-cover">
+                        <img src="images/photo-2.jpg" alt="">
+                    </div>
+                    <div class="app-name">
+                        <p>This Symbol Reveals Your True Personality</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script>
+
+        //window.alert("hello world !");
+        const fbBtn1 = document.getElementById("share-btn1");
+        const fbBtn2 = document.getElementById("share-btn2");
+        const playBtn1 = document.getElementById("play-btn1");
+        const myReult = document.getElementById("result-box");
+        const checkMore = document.getElementById("check-more");
+        const loveScore = document.getElementById("love-score");
+        fbBtn1.style.display="none";
+        fbBtn2.style.display="none";
+        playBtn1.style.display="none";
+        myReult.style.display="none";
+        checkMore.style.display="none";
+        function result(){
+            fbBtn1.style.removeProperty('display');
+            fbBtn2.style.removeProperty('display');
+            playBtn1.style.removeProperty('display');
+            myReult.style.removeProperty('display');
+            checkMore.style.removeProperty('display');
+            loveScore.style.display="none";
+        }
+
+    </script>
 </body>
 </html>
